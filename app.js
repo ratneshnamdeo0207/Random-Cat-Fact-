@@ -1,20 +1,27 @@
 let link = "https://catfact.ninja/fact";
 
 h2 = document.querySelector("h2")
-function clearFact()
-{
-    h2.innerText = "Random Cat Facts🐱";
-}
-async function getFact()
-{
-    try{
-        
+p = document.querySelector("#fact")
+let b = document.querySelector("button")
+
+b.addEventListener("click", async ()=>{
+    p.innerText = await getFact();
+})
+async function getFact() {
+    try {
+
         let data = await axios.get(link);
         console.log(data.data.fact);
-        h2.innerText = data.data.fact
-        
+        return data.data.fact;
+
     }
-    catch(e){
+    catch (e) {
         console.log("Error: ", e);
+        return "No Fact Received";
     }
+}
+
+function clearFact()
+{
+    p.innerText = 'Click "New Fact" to load a cat fact!';
 }
