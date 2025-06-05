@@ -1,6 +1,6 @@
-# 🐱 Random Cat Facts Web App
+# 🐱 Random Cat Fact Generator
 
-This is a simple and fun web application that displays random cat facts using the [Cat Fact API](https://catfact.ninja/fact). Built with HTML, CSS, JavaScript, and Axios.
+This is a fun and simple frontend project that fetches and displays a **random cat fact** along with a **random cat image** using two public APIs.
 
 ## 📸 Screenshots
 
@@ -9,22 +9,40 @@ This is a simple and fun web application that displays random cat facts using th
 
 ![Desktop View](Screenshot%20(351).png)
 
-## 🛠️ Tech Stack
+## 🛠️ Features
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Axios for API requests
+- Click a button to fetch:
+  - A **random cat fact** from [catfact.ninja](https://catfact.ninja/fact)
+  - A **random cat image** from [The Cat API](https://thecatapi.com/)
+- User-friendly and interactive layout
 
-## 🎯 Features
+---
 
-- Fetches a new cat fact using the API on button click
-- Clear fact button resets the display
-- Responsive and modern UI using flexbox and gradients
-- Clean, interactive design with hover animations
+## 🌐 Technologies Used
 
-## 📁 How to Use
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Axios** (for making API requests)
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/ratneshnamdeo0207/random-cat-facts.git
+---
+
+## 📦 APIs Used
+
+1. 🐾 **Cat Facts API**  
+   `https://catfact.ninja/fact`  
+   Returns a random cat fact in JSON format.
+
+2. 🐈 **The Cat API**  
+   `https://api.thecatapi.com/v1/images/search`  
+   Returns a random cat image in JSON format.
+
+---
+
+## 🧠 How It Works
+
+1. When the user clicks the **"New Fact"** button:
+   - An `async` function (`getFact`) is triggered.
+   - It fetches data from both APIs.
+   - Displays the cat fact and cat image in the DOM.
+
