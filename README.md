@@ -5,9 +5,9 @@ This is a simple and fun web application that displays random cat facts using th
 ## 📸 Screenshots
 
 ### 💻 Desktop View
-![Mobile View](Screenshot%20(344).png)
+![Mobile View](Screenshot%20(350).png)
 
-![Desktop View](Screenshot%20(345).png)
+![Desktop View](Screenshot%20(351).png)
 
 ## 🛠️ Tech Stack
 
